@@ -1,9 +1,29 @@
-<h1>Angular Router App</h1>
-<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav>
-  <ul>
-    <li><a routerLink="/xyz" routerLinkActive="active">First Component</a></li>
-  </ul>
-</nav>
+<div class="container" *ngIf="shouldRun">
+  <mat-toolbar color="primary" position = "fixed">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+  </mat-toolbar>
+  <mat-sidenav-container  class="example-sidenav-container">
+    <mat-sidenav #snav>
+      <mat-nav-list *ngFor="let nav of navigation">
+        <a mat-list-item [routerLink]="nav.link">
+          <span class="material-icons">
+            {{nav.icon}}
+          </span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
+
 <!-- The routed views render in the <router-outlet>-->
-<router-outlet></router-outlet>
+
