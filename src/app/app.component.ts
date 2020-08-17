@@ -1,14 +1,15 @@
 import {MediaMatcher} from '@angular/cdk/layout';
-import {ChangeDetectorRef, Component, OnDestroy} from '@angular/core';
+import {ChangeDetectorRef, Component, OnDestroy, ViewEncapsulation} from '@angular/core';
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnDestroy {
-  private shouldRun = true;
+  public shouldRun = true;
   mobileQuery: MediaQueryList;
 
   navigation = [

@@ -13,6 +13,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { SummaryComponent } from './summary/summary.component';
 import { UpcomingTransactionsComponent } from './upcoming-transactions/upcoming-transactions.component';
 import { LoginComponent } from './login/login.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -26,13 +27,15 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NgxChartsModule
   ],
   exports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
