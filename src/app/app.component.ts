@@ -13,8 +13,8 @@ export class AppComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
   navigation = [
-    {name : 'Summary', icon : 'insert_chart', link: '/summary'},
-    {name : 'Transactions', icon : 'account_balance',  link: '/transactions'},
+    {name : 'Summary', icon : 'insert_chart', link: '/myaccounts'},
+    {name : 'Accounts', icon : 'account_balance',  link: '/accounts'},
   ];
 
   fillerContent = Array.from({length: 50}, () =>

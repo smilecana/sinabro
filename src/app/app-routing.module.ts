@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {UpcomingTransactionsComponent} from './upcoming-transactions/upcoming-transactions.component';
 import {SummaryComponent} from './summary/summary.component';
+import {AccountsSummaryComponent} from './accounts-summary/accounts-summary.component';
 
 const routes: Routes = [{
   path: 'transactions',
@@ -10,7 +11,11 @@ const routes: Routes = [{
   {
     path: 'summary',
     component: SummaryComponent
-  }
+  } ,
+  {
+    path: 'accounts',
+    component: AccountsSummaryComponent
+  },
 ];
 
 @NgModule({
