@@ -1,14 +1,67 @@
-<div class = 'container'>
+<div class='container'>
   <ng-container color="primary">
     <mat-card>
-    <mat-grid-list cols="3" rowHeight="300">
-      <mat-grid-tile
-        [colspan]="2"
-        [rowspan]="1">
-        <mat-card>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
+      <div>
+        <h3>Home Account</h3>
+        <button mat-button aria-label="Example icon button with a home icon">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+      <table>
+        <tr>
+          <td>예금</td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <td>적금</td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>123</td>
+        </tr>
+      </table>
     </mat-card>
+  </ng-container>
+  <ng-container>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false"
+                           expanded="true">
+        <mat-expansion-panel-header >
+          <mat-panel-title>
+            예금
+          </mat-panel-title>
+          <mat-panel-description>
+            123
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item>Item 1</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Item 2</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Item 3</mat-list-item>
+        </mat-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            적금
+          </mat-panel-title>
+          <mat-panel-description>
+            123
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item>Item 1</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Item 2</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Item 3</mat-list-item>
+        </mat-list>
+      </mat-expansion-panel>
+    </mat-accordion>
   </ng-container>
 </div>

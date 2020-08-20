@@ -1,3 +1,40 @@
-.container{
+.container {
   padding: 3%;
+
+  mat-card {
+    width: 40%;
+    margin-bottom: 3%;
+    div{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 94%;
+    text-align: right;
+    margin-left: 12px;
+    td:first-child {
+      width: 10%;
+      text-align: left;
+      height: 30px;
+    }
+
+    tr:last-child {
+      font-weight: bold;
+      font-size: 1.2em;
+      td {
+        border-top: 1px solid #cccccc;
+      }
+    }
+  }
+  .mat-expansion-panel-spacing{
+    margin: 6px 0;
+  }
+  .mat-expansion-panel-header-description{
+      flex-grow: 0;
+  }
 }
