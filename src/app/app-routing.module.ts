@@ -3,6 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {UpcomingTransactionsComponent} from './upcoming-transactions/upcoming-transactions.component';
 import {SummaryComponent} from './summary/summary.component';
 import {AccountsSummaryComponent} from './accounts-summary/accounts-summary.component';
+import {AccountDetailComponent} from './account-detail/account-detail.component';
 
 const routes: Routes = [{
   path: 'transactions',
@@ -16,6 +17,11 @@ const routes: Routes = [{
     path: 'accounts',
     component: AccountsSummaryComponent
   },
+  {
+    path: 'accounts/check/:id',
+    component: AccountDetailComponent
+  }
+
 ];
 
 @NgModule({

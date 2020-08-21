@@ -3,9 +3,6 @@
     <mat-card>
       <div>
         <h3>Home Account</h3>
-        <button mat-button aria-label="Example icon button with a home icon">
-          <mat-icon>add</mat-icon>
-        </button>
       </div>
       <table>
         <tr>
@@ -24,6 +21,9 @@
     </mat-card>
   </ng-container>
   <ng-container>
+    <button mat-button aria-label="Example icon button with a home icon">
+      <mat-icon>add</mat-icon>
+    </button>
     <mat-accordion>
       <mat-expansion-panel (opened)="panelOpenState = true"
                            (closed)="panelOpenState = false"
@@ -33,7 +33,6 @@
             예금
           </mat-panel-title>
           <mat-panel-description>
-            123
           </mat-panel-description>
         </mat-expansion-panel-header>
         <mat-list>

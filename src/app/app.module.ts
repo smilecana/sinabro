@@ -15,6 +15,7 @@ import { UpcomingTransactionsComponent } from './upcoming-transactions/upcoming-
 import { LoginComponent } from './login/login.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { AccountsSummaryComponent } from './accounts-summary/accounts-summary.component';
+import { AccountDetailComponent } from './account-detail/account-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AccountsSummaryComponent } from './accounts-summary/accounts-summary.co
     UpcomingTransactionsComponent,
     LoginComponent,
     AccountsSummaryComponent,
+    AccountDetailComponent,
   ],
   imports: [
     BrowserModule,
