@@ -1,28 +1,18 @@
 <div class='container'>
   <ng-container color="primary">
     <mat-card>
-
-      <mat-grid-list  cols="6" rowHeight="150">
-        <mat-grid-tile
-          [colspan]="1"
-          [rowspan]="1">
-          <h3>Accounts</h3>
-        </mat-grid-tile>
-        <mat-grid-tile
-          [colspan]="5"
-          [rowspan]="1">
-          <mat-select>
-            <mat-option>예금1</mat-option>
-          </mat-select>
-        </mat-grid-tile>
-        <mat-grid-tile
-          [colspan]="1"
-          [rowspan]="1">
-          <mat-select>
-            <mat-option>예금1</mat-option>
-          </mat-select>
-        </mat-grid-tile>
-      </mat-grid-list>
+      <h4>Account</h4>
+      <mat-form-field appearance="fill">
+        <mat-select>
+          <mat-option value="valid" selected>우리은행 Evenry Day CHQUING ACCOUNT - 1324-23-43-</mat-option>
+          <mat-option value="valid" >우리은행 Evenry Day CHQUING ACCOUNT - 1324-23-43-</mat-option>
+        </mat-select>
+        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error>You must make a selection</mat-error>
+        <mat-error>
+          Your selection is invalid
+        </mat-error>
+      </mat-form-field>
     </mat-card>
   </ng-container>
   <ng-container color="primary">
