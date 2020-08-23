@@ -2,8 +2,21 @@
   padding: 3%;
   mat-card{
     margin-bottom: 30px;
+    .title{
+      margin: 17px;
+    }
+    .bold{
+      font-weight: bold;
+    }
   }
   mat-form-field{
-    width: 500px;
+    width: 100%;
+  }
+  mat-grid-tile{
+    padding: 1%;
+    background-color: #cccccc;
+  }
+  table{
+    width: 100%;
   }
 }
