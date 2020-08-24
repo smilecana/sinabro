@@ -1,7 +1,9 @@
 .container{
   padding: 3%;
   mat-card{
-    margin-bottom: 30px;
+    width: 90%;
+    margin: 15px 0;
+    min-height: 80%;
     .title{
       margin: 17px;
     }
@@ -9,14 +11,15 @@
       font-weight: bold;
     }
   }
-  mat-form-field{
+  mat-form-field {
     width: 100%;
-  }
-  mat-grid-tile{
-    padding: 1%;
-    background-color: #cccccc;
   }
   table{
     width: 100%;
+  }
+  .text-inside-grid {
+    position: absolute;
+    width: 97%;
+    height: 95%;
   }
 }
