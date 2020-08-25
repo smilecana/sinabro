@@ -2,7 +2,7 @@
   <ng-container color="primary">
     <mat-grid-list cols="2" rowHeight="200" gutterSize="30px">
       <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card>
+        <mat-card class="account-summary">
           <mat-form-field appearance="fill">
             <mat-label>Accounts</mat-label>
             <mat-select>
@@ -17,10 +17,17 @@
           </mat-form-field>
           <table>
             <tr>
-              <td class="bold">Current Balance</td>
+              <td class="bold total">Current Balance</td>
+              <td class="bold">
+                Update Date
+              </td>
             </tr>
             <tr>
-              <td><h2>$11,500.35</h2></td>
+              <td class="total" rowspan="2"><span>$11,500.35</span></td>
+              <td>Aug 20,2020 11:50:00PM</td>
+            </tr>
+            <tr>
+              <td><button mat-raised-button class="mat-primary">Add Account</button></td>
             </tr>
           </table>
         </mat-card>

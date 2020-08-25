@@ -17,6 +17,29 @@
   table{
     width: 100%;
   }
+  .account-summary{
+    table{
+      border-spacing: 0;
+      tr{
+        td{
+          padding-left: 30px;
+          button{
+            margin-top: 10px;
+          }
+        }
+      }
+      .total{
+        width: 30%;
+        border-right: 1px solid #cccccc;
+        padding-left: 0px !important;
+        span{
+          font-size: 2em;
+
+        }
+      }
+    }
+
+  }
   .text-inside-grid {
     position: absolute;
     width: 97%;
