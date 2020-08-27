@@ -4,6 +4,7 @@ import {UpcomingTransactionsComponent} from './upcoming-transactions/upcoming-tr
 import {SummaryComponent} from './summary/summary.component';
 import {AccountsSummaryComponent} from './accounts-summary/accounts-summary.component';
 import {AccountDetailComponent} from './account-detail/account-detail.component';
+import {UploadAccountComponent} from './upload-account/upload-account.component';
 
 const routes: Routes = [{
   path: 'transactions',
@@ -20,6 +21,10 @@ const routes: Routes = [{
   {
     path: 'accounts/check/:id',
     component: AccountDetailComponent
+  },
+  {
+    path: 'accounts/check/:id/upload',
+    component: UploadAccountComponent
   }
 
 ];
