@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upload-account.component.scss']
 })
 export class UploadAccountComponent implements OnInit {
-
+  fileToUpload: File = null;
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
+  public handleFileInput(files: EventTarget): void {
+    console.log(files);
+  }
 }
