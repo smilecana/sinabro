@@ -12,6 +12,5 @@ export class UploadAccountComponent implements OnInit {
   ngOnInit(): void {}
 
   public handleFileInput(files: EventTarget): void {
-    console.log(files);
   }
 }
