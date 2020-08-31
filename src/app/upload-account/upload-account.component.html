@@ -1,6 +1,38 @@
-<div class="form-group">
-  <label for="file">Choose File</label>
-  <input type="file"
-         id="file"
-         (change)="handleFileInput($event.target)">
-</div>
+<div class="container">
+  <label class="file">
+    <input type="file" id="file" aria-label="File browser example" (change)="fileupload($event)">
+    <span class="file-custom"></span>
+  </label>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> <input type ='text'></th>
+      <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef> description</th>
+      <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="withdrawals">
+      <th mat-header-cell *matHeaderCellDef> withdrawals</th>
+      <td mat-cell *matCellDef="let element"> {{element.withdrawals}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="deposits">
+      <th mat-header-cell *matHeaderCellDef> deposits</th>
+      <td mat-cell *matCellDef="let element"> {{element.deposits}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="balance">
+      <th mat-header-cell *matHeaderCellDef> balance</th>
+      <td mat-cell *matCellDef="let element"> {{element.balance}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
