@@ -13,14 +13,12 @@ export interface CSVRecord {
 })
 export class UploadAccountComponent implements OnInit {
   public records: [];
-  public dataSource;
-  public displayedColumns: string[] = [];
+  public displayedColumns: string[] = ['date', 'description', 'withdrawals', 'deposits', 'balance'];
+  public dataSource = this.records;
   constructor() { }
 
   ngOnInit(): void {
   }
-
-
   public fileupload(file: any): void {
     this.readThis(file.target);
   }
