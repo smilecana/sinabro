@@ -18,8 +18,10 @@ export class UploadAccountComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    //금융결제서비스 api 확인해보기
   }
   public fileupload(file: any): void {
+
     this.readThis(file.target);
   }
   public readThis(inputValue: any): void {
