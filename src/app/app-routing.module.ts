@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {UpcomingTransactionsComponent} from './upcoming-transactions/upcoming-transactions.component';
-import {SummaryComponent} from './summary/summary.component';
-import {AccountsSummaryComponent} from './accounts-summary/accounts-summary.component';
-import {AccountDetailComponent} from './account-detail/account-detail.component';
-import {UploadAccountComponent} from './upload-account/upload-account.component';
+import {UpcomingTransactionsComponent} from './pages/upcoming-transactions/upcoming-transactions.component';
+import {SummaryComponent} from './pages/summary/summary.component';
+import {AccountsSummaryComponent} from './pages/accounts-summary/accounts-summary.component';
+import {AccountDetailComponent} from './pages/account-detail/account-detail.component';
+import {UploadAccountComponent} from './pages/upload-account/upload-account.component';
 
 const routes: Routes = [{
   path: 'transactions',

@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './material-module';
-import { SummaryComponent } from './summary/summary.component';
-import { UpcomingTransactionsComponent } from './upcoming-transactions/upcoming-transactions.component';
-import { LoginComponent } from './login/login.component';
+import { SummaryComponent } from './pages/summary/summary.component';
+import { UpcomingTransactionsComponent } from './pages/upcoming-transactions/upcoming-transactions.component';
+import { LoginComponent } from './pages/login/login.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { AccountsSummaryComponent } from './accounts-summary/accounts-summary.component';
-import { AccountDetailComponent } from './account-detail/account-detail.component';
-import { UploadAccountComponent } from './upload-account/upload-account.component';
+import { AccountsSummaryComponent } from './pages/accounts-summary/accounts-summary.component';
+import { AccountDetailComponent } from './pages/account-detail/account-detail.component';
+import { UploadAccountComponent } from './pages/upload-account/upload-account.component';
 
 @NgModule({
   declarations: [
