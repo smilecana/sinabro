@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Logger} from '../../services/Logger';
 
 export interface Tile {
   color: string;
@@ -153,7 +154,10 @@ export class SummaryComponent implements OnInit {
   public yAxisLabel = 'Population';
   public timeline = true;
 
-  constructor() {
+  constructor(
+    private logger: Logger
+  ) {
+    logger.error('hi');
   }
 
   public onSelect(data): void {
