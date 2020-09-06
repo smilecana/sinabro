@@ -1,6 +1,6 @@
 export class Logger {
   public  log(msg: any): void {
-    console.log(msg);
+    console.log(`${msg}`, '123');
   }
 
   public error(msg: any): void {
