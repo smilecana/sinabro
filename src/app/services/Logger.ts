@@ -1,13 +1,13 @@
 export class Logger {
   public  log(msg: any): void {
-    console.log(`${msg}`, '123');
+    console.log(`${msg}`, 'log');
   }
 
   public error(msg: any): void {
-    console.error(msg);
+    console.log(`${msg}`, 'error');
   }
 
   public  warn(msg: any): void {
-    console.warn(msg);
+    console.log(`${msg}`, 'warn');
   }
 }
