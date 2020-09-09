@@ -5,15 +5,20 @@ import {SummaryComponent} from './pages/summary/summary.component';
 import {AccountsSummaryComponent} from './pages/accounts-summary/accounts-summary.component';
 import {AccountDetailComponent} from './pages/account-detail/account-detail.component';
 import {UploadAccountComponent} from './pages/upload-account/upload-account.component';
+import {LoginComponent} from './pages/login/login.component';
 
 const routes: Routes = [{
   path: 'transactions',
   component: UpcomingTransactionsComponent
 },
   {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
     path: 'summary',
     component: SummaryComponent
-  } ,
+  },
   {
     path: 'accounts',
     component: AccountsSummaryComponent
